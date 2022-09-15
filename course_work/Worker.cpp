@@ -3,8 +3,7 @@
 Worker::Worker ( int Salary, const string& Jobtitle, const string& Zavod,const string& firstName, const string& lastName,
 	int day, int month, int year,
 	double height, double weight, const string& country, const string& gender)   :Person(firstName, lastName, day, month, year, height,
-		weight, country, gender)
-	
+		weight, country, gender)	
 {
 	this->Salary = Salary;
 	this->Jobtitle = Jobtitle;
@@ -51,7 +50,6 @@ void Worker::Print()
 	Person::Print();
 	
 }
-
 string Worker:: GetJobtitle()
 {
 	return  Jobtitle;

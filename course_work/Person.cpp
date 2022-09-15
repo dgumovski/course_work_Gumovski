@@ -1,8 +1,5 @@
 #include "Person.h"
 
-
-
-
 string Person::GetfirstName()
 {
 	return firstName;
@@ -39,16 +36,9 @@ string Person::Getgender()
 {
 	return gender;
 }
-
-
-
-
 Person::Person (const string& firstName, const string& lastName,
 	int day, int month, int year,
 	double height, double weight, const string& country,const string& gender)
-		
-
-	
 {
 	this->firstName = firstName;
 	this->lastName = lastName;
@@ -58,15 +48,8 @@ Person::Person (const string& firstName, const string& lastName,
 	this->height = height;
 	this->weight = weight;
 	this->country = country;
-	this->gender = gender;
-		
-		
+	this->gender = gender;	
 }
-
-
-
-
-
 void Person::ChangeCountry(const string& country)
 {
 	this->country = country;
@@ -74,7 +57,6 @@ void Person::ChangeCountry(const string& country)
 
 bool Person::IsHeightMore200cm()
 {
-
 	if (height > 200)
 	{
 		cout << "Ваш рост больше, чем 200 см" << endl;
@@ -90,10 +72,7 @@ bool Person::livesInUkraine()
 {
 	if (country == "Ukraine" || country == "UA"
 		|| country == "Украина" || country == "Україна")
-
 	{
-
-
 		cout << "Данная личность является жителем Украины" << endl;
 		return  country == "Ukraine" || country == "UA"
 			|| country == "Украина" || country == "Україна";
@@ -106,7 +85,6 @@ bool Person::livesInUkraine()
 	}
 	
 }
-
 void Person::Print()
 {
 	cout << " Фамилия: " << GetfirstName() << " Имя: "

@@ -1,13 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include <vector>
 using namespace std;
-
-
-
- 
-
 class Person
 {
 public:
@@ -16,7 +10,6 @@ public:
         int day, int month, int year,
         double height, double weight, const string& gender,
         const string& country);
-
     string GetfirstName();
     string GetlastName();
     int Getday();
@@ -27,16 +20,10 @@ public:
     string Getcountry();
     string Getgender();
     
-
-
     void ChangeCountry(const string& country);
     bool IsHeightMore200cm();
     bool livesInUkraine();
     virtual void Print();
-
-   
-   
-
 private:
         string firstName;
         string lastName;
@@ -46,10 +33,7 @@ private:
         double height;
         double weight;
         string country;
-        string gender;
-     
-        
-      
+        string gender; 
 };
 
 

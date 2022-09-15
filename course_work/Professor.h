@@ -11,7 +11,6 @@ public:
 		int day, int month, int year,
 		double height, double weight, const string& gender,
 		const string& country);
-	
 	void CalculationOfWage();
 	void AwardDegree();
 	void Print() override;
@@ -22,15 +21,12 @@ public:
 	int GetExperience();
 	int GetSalary();
 	int GetCountOfWorks();
-	
 private:
-
 	string University;
 	string Subject;
 	string Cafedra;
 	string Degree;
 	int Experience;
-	
 	int Salary;
 	int CountOfWorks;
 

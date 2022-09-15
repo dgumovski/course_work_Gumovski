@@ -29,15 +29,16 @@ int main()
 			{
 					case 1: // person
 					{
-							int variant_of_menuPerson;
-							cout << "Выберите опцию с классом Человек:"
+						int variant_of_menuPerson;
+						cout << "Выберите опцию с классом Человек:"
 							<< "\n1.Вывести информацию"
 							<< "\n2.Создать"
 							<< "\n3.Удалить"
 							<< "\n4.Проверка роста"
 							<< "\n5.Живет ли в Украине?"
 							<< "\n6.Смена страны проживания"
-							<< "\n7.Выход" << endl;
+							<< "\n7.Выход в главное меню"
+							<< "\n8.Выход" << endl;
 							cin >> variant_of_menuPerson;
 							switch (variant_of_menuPerson)
 							{
@@ -196,6 +197,11 @@ int main()
 
 									case 7:
 									{
+										continue;
+										break;
+									}
+									case 8:
+									{
 										cout << "Выход из программы..." << endl;
 										system("pause");
 										exit(EXIT_SUCCESS);
@@ -224,7 +230,8 @@ int main()
 								<< "\n3.Удалить"
 								<< "\n4.Увеличить зарплату"
 								<< "\n5.Смена должности"
-								<< "\n6.Выход" << endl;
+								<< "\n6.Выход в главное меню"
+								<< "\n7.Выход" << endl;
 							cin >> variant_of_menuWorker;
 							switch (variant_of_menuWorker)
 							{
@@ -368,6 +375,11 @@ int main()
 									}
 									case 6:
 									{
+										continue;
+										break;
+									}
+									case 7:
+									{
 										cout << "Выход из программы..." << endl;
 										system("pause");
 										exit(EXIT_SUCCESS);
@@ -398,7 +410,8 @@ int main()
 								<< "\n4.Рассчитать зарплату"
 								<< "\n5.Присудить степень"
 								<< "\n6.Вывести всех преподавателей заданой кафедры"
-								<< "\n7.Выход" << endl;
+								<< "\n7.Выход в главное меню"
+								<< "\n8.Выход" << endl;
 								cin >> variant_of_menuProfessor;
 								switch (variant_of_menuProfessor)
 								{
@@ -563,12 +576,18 @@ int main()
 											}
 											case 7:
 											{
+												continue;
+												break;
+											}
+											case 8:
+											{
 												cout << "Выход из программы..." << endl;
 												system("pause");
 												exit(EXIT_SUCCESS);
 												break;
 											}
 
+											
 											default:
 											{
 												cerr << "Вы выбрали неверный вариант" << endl;
