@@ -30,6 +30,10 @@ void Professor::CalculationOfWage()
 	{
 		Salary = Salary + 6000;
 	}
+	else 
+	{
+		Salary = Salary;
+	}
 }
 void Professor::AwardDegree()
 {
