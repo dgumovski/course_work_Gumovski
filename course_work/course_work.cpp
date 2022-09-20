@@ -608,10 +608,10 @@ int main()
 					}
 					default: //error
 					{
-						cerr << "Вы выбрали неверный вариант" << endl;
+						cerr << "Вы выбрали неверный вариант,попробуйте еще раз" << endl;
 						cout << "=========================== " << endl;
 						system("pause");
-						exit(EXIT_FAILURE);
+						continue;
 							break;
 					}
 			} 

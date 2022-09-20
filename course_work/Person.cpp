@@ -38,7 +38,7 @@ string Person::Getgender()
 }
 Person::Person (const string& firstName, const string& lastName,
 	int day, int month, int year,
-	double height, double weight, const string& country,const string& gender)
+	double height, double weight,const string& gender, const string& country)
 {
 	this->firstName = firstName;
 	this->lastName = lastName;

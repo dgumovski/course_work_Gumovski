@@ -14,19 +14,19 @@ Professor::Professor(const string& University, const string& Subject, const stri
 }
 void Professor::CalculationOfWage()
 {
-	if (Experience <5 ||Degree == "candidat")
+	if (Experience <5  && Degree == "candidat")
 	{
 		Salary = Salary + 1000;
 	}
-	else if (Experience < 5 || Degree == "doctor")
+	else if (Experience < 5 && Degree == "doctor")
 	{
 		Salary = Salary + 4000;
 	}
-	else if (Experience > 5 || Degree == "candidat")
+	else if (Experience > 5 && Degree == "candidat")
 	{
 		Salary = Salary + 3000;
 	}
-	else if (Experience > 5 || Degree == "doctor")
+	else if (Experience > 5 && Degree == "doctor")
 	{
 		Salary = Salary + 6000;
 	}
